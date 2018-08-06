@@ -40,8 +40,8 @@ Build 'virtualbox-iso' errored: ISO download failed.
 
 ## Part II: Cloning, developing, and running the web application
 
-* On your local machine go to the root directory of the cloned repository 
-* Run `git clone https://github.com/chef/devops-kungfu.git devops-kungfu`
+* On your VM machine go to the root directory of the cloned repository 
+* Run `git clone https://github.com/chef/devops-kungfu.git devops-kungfu`.
 * Open http://localhost:8080 from your local machine to see the app running.
 * In the VM, run `cd devops-kungfu`
 * To install app specific node packages, run `sudo npm install`. You may see several errors; they can be ignored for now.
@@ -62,5 +62,20 @@ Error message `Error starting VM: VBoxManage error: VBoxManage: error: VT-x is d
 * [http://www.sysprobs.com/disable-enable-virtualization-technology-bios](http://www.sysprobs.com/disable-enable-virtualization-technology-bios)
 * [https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/)
 
+#### SSH git clone
+```
+vagrant@vagrant:~$ git clone git@github.com:claesjaeger/devops-kungfu.git
+Cloning into 'devops-kungfu'...
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
 
+Please make sure you have the correct access rights
+and the repository exists.
+```
+This is solved by using `ssh-add`
+```
+ssh-add .ssh/id_rsa
+```
+Test with `ssh -T git@github.com`
 
