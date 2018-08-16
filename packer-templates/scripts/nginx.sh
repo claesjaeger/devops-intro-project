@@ -1,5 +1,4 @@
 #!/bin/bash -eux
-
 apt-get -y install nginx
 # create jenkins and graphite config for nginx
 cat <<EOF > /etc/nginx/sites-available/manage
