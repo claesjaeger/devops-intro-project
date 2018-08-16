@@ -68,12 +68,14 @@
       {
         "type": "googlecompute",
         "account_file": "account.json",
-        "project_id": "devops-intro-project",
+        "project_id": "pristine-valve-212608",
         "source_image": "ubuntu-1404-trusty-v20150316",
-        "zone": "us-central1-a",
+        "zone": "europe-north1-a",
         "image_name": "application-ubuntu-1404-{{timestamp}}",
         "machine_type": "n1-standard-1",
-        "ssh_username": "ubuntu"
+        "ssh_username": "vagrant",
+        "ssh_password": "vagrant"
+        
       },
       {
         "type": "digitalocean",
@@ -101,6 +103,14 @@
     "scripts": [
         "scripts/virtualbox.sh",
         "scripts/vagrant.sh"
+      ]
+    },
+    {
+    "type": "shell",
+    "only": ["googlecompute"],
+    "execute_command": "echo 'vagrant'|sudo -S -E bash '{{.Path}}'",
+    "scripts": [
+        "scripts/fix_devops_folder.sh",
       ]
     },
     {

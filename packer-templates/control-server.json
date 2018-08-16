@@ -68,9 +68,9 @@
       {
         "type": "googlecompute",
         "account_file": "account.json",
-        "project_id": "devops-intro-project",
+        "project_id": "pristine-valve-212608",
         "source_image": "ubuntu-1404-trusty-v20150316",
-        "zone": "us-central1-a",
+        "zone": "europe-west1-d",
         "image_name": "control-ubuntu-1404-{{timestamp}}",
         "machine_type": "n1-standard-1",
         "ssh_username": "ubuntu"

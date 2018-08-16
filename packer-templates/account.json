@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pristine-valve-212608",
+  "private_key_id": "dc895a8c5f151c50eabe3217568541bb74951963",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCRWnTcaYL9ttKn\nlGie018Wn3LHDG96OBilvyTUsHWArONSZB5SF6SdLAHwf/zTByDwmcKEaUUil7Zu\nC/9dW+NFntjP/37iKnI5MMJ1xISwIGaj+Bb+Z1EPbQDikpAYeLf4qrhFuDR/9vuF\nRSAD5cebilsnnov8PinCs/swemZhwFNZDOgU+dHUaMQ3lXTu+ZX2VBWYPA3sjy5I\nUXUP4q0SPELvmIOqp7HNkaf/4334iofYZ+GDDRGRG5o4lMDZKy76UDh3EiKZyDiz\nuE/d89pAHG/C+X/zymzylV/B7aNfd0uSM2lJ7HGGdO3aMlr7glOaWyOsUDogN8EV\nVK8nKMJlAgMBAAECggEACWGO7sXRijnxNRcfPHb0aWOflwiurjLuJk5knGSKJOSj\npEbpbQ9xFKLJOkIsaVtJrTWjSAP6Tg4AHHCiSd57F9x1blE1WXf3WMkUl+C31p00\nuqrxovg8k1QL7VObwLST3RT5oShPHR4t5A9OzmmXXSrMEM3LB5vkepg+o0WXE4Jr\nATOawZfts/0QrJlBcZQH8dYArBnnbI+Rach7L8b9nKAexqz0bSWgkQxGT2OA13Vt\n7SxuIgYSJwP3G8w69Si53fxn1ArAANmi7M55D2ykBCz8aKiiWgTmMopG+no6OkC9\nbajzUoyWxot18/UYurPx6XasM5d1+BUQWiGk+M2ySQKBgQDKPL4xARYYwL0YxgXM\nuNXT3AGAVNk1nbWwaj+t0hkCZTEKZmQg2hmYNeEGxa2v4RtIODGZcDMI29zQeYzw\nxC512uCa6vO4h7I/e8ICCylD+2swcLqeoTlkr5FBuT4yf64qzpJ9q7Zwg8f6pVE+\nezG83BRg7uUcu0tkzTdeDXw4CQKBgQC3/npTM59+rTASDTO4FCg8TuP9nWkTzg5B\nN3REaz7VBTZ4kTXFmShU5Sec3/sNiav18njuCEcppIx6Ur+P9r6YEGT9WCeM+Lur\nsPSC8GuwgFabqBDKb2+vjYmSJfdgQviFraaUlcIU2qe3AW5kfbtkGwn4RbFZT1/2\n9Ag/kRO2fQKBgH4XQ0nQcJN8UCoLBQCwWXlfGXyG6mqYaviUNiHM9ZTdvKbMUi99\nbCnPpf6P74vSIS11A8+z+c3TLyi4MFzJJGKM1i8gwFZUHJmiMsMNbGwbbKhmEKTo\nxpz1Le65bYMUwmWkKAe8sOIT9/JZcn8vVkJ3QSlyqVyxlf9CR/wXElTpAoGBAJh8\nVJCj1ek8SvyK6HQEcJwanaTQUgdR3Ep8VOVnJDmTCmO9pJzQo7ZH/B5tGjlMAbHh\ndAuB3MhMUQgHkC8VxTttSuUTrCOO+KoAC4SBEB7FHgH+tXuwAxWw7XSr9mpW1nSj\nR80YmDKETD7E9uJduXHrXsXdrG9h8xxNfpCAAaBZAoGBAJxD78kboIR8QuH1+9m3\n16FhIeSYPSWXSnRSM4GkVO1KsVh3flq07HOPizTdQl/w0Bh4YunSNHZAzgUi5N1t\nccBiad4Ih5ZfzoTb38oSeaYOv0zpiDLFEjLhZLfaIXHsElsA18PpfQYG9W4jgDcf\nM+iFQtmUxI5La6W86/tlIHVF\n-----END PRIVATE KEY-----\n",
+  "client_email": "devops2@pristine-valve-212608.iam.gserviceaccount.com",
+  "client_id": "108063128631959254428",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/devops2%40pristine-valve-212608.iam.gserviceaccount.com"
+}
