@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-
+echo 'Jenkins start-------------------------------------------------------------'
 # JDK and JRE are required for Jenkins
 apt-get install -y openjdk-7-jre openjdk-7-jdk unzip dos2unix
 
@@ -32,3 +32,5 @@ chown -R jenkins:jenkins /var/lib/jenkins
 
 # restart for jenkins to pick up the new configs
 service jenkins restart
+
+echo 'Jenkins done-------------------------------------------------------------'

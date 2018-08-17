@@ -3,3 +3,5 @@ packer_cache
 packer-templates/virtualbox/
 devops-kungfu/
 packer-templates/account.json
+*.box
+.vagrant/

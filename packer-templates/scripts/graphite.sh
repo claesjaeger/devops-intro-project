@@ -1,4 +1,5 @@
 #!/bin/bash -eux
+echo 'graphite start-------------------------------------------------------------'
 # nginx web server plugins
 apt-get -y install uwsgi-plugin-python uwsgi
 
@@ -42,3 +43,4 @@ chown -R www-data:www-data /opt/graphite/webapp/ /opt/graphite/storage/
 /opt/graphite/bin/carbon-cache.py start
 service uwsgi restart
 #service nginx restart
+echo 'graphite done-------------------------------------------------------------'

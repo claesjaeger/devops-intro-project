@@ -1,5 +1,5 @@
 #!/bin/bash -eux
-
+echo 'nginx start-------------------------------------------------------------'
 apt-get -y install nginx
 # create jenkins and graphite config for nginx
 cat <<EOF > /etc/nginx/sites-available/manage
@@ -38,3 +38,4 @@ rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 ln -s /etc/nginx/sites-available/manage /etc/nginx/sites-enabled/
 
 service nginx restart
+echo 'nginx done-------------------------------------------------------------'
