@@ -63,6 +63,8 @@ Error message `Error starting VM: VBoxManage error: VBoxManage: error: VT-x is d
 * [https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/](https://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/)
 
 #### SSH git clone
+This happens on the both the local and online image. Copy the local key to hte .ssh folder for the user you are working with.
+
 ```
 vagrant@vagrant:~$ git clone git@github.com:claesjaeger/devops-kungfu.git
 Cloning into 'devops-kungfu'...
@@ -75,7 +77,9 @@ and the repository exists.
 ```
 This is solved by using `ssh-add`
 ```
-ssh-add .ssh/id_rsa
+eval `ssh-agent -s`
+ssh-add .ssh/[id_rsa]
 ```
+
 Test with `ssh -T git@github.com`
 

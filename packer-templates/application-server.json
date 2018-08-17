@@ -110,7 +110,7 @@
     "only": ["googlecompute"],
     "execute_command": "echo 'vagrant'|sudo -S -E bash '{{.Path}}'",
     "scripts": [
-        "scripts/fix_devops_folder.sh",
+        "scripts/fix_devops_folder.sh"
       ]
     },
     {
