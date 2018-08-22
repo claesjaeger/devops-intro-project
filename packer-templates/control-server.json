@@ -73,7 +73,7 @@
         "zone": "europe-west1-d",
         "image_name": "control-ubuntu-1404-{{timestamp}}",
         "machine_type": "n1-standard-1",
-        "ssh_username": "ubuntu"
+        "ssh_username": "vagrant"
       },
       {
       "type": "digitalocean",
