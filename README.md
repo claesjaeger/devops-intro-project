@@ -98,4 +98,4 @@ OpenJDK 64-Bit Server VM (build 24.181-b01, mixed mode)
 Aborting
 ```
 
-Need to update 
+See wiki page for updating

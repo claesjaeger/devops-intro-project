@@ -71,7 +71,7 @@
         "type": "googlecompute",
         "account_file": "account.json",
         "project_id": "pristine-valve-212608",
-        "source_image": "ubuntu-1604-xenial-v20180814 ",
+        "source_image": "ubuntu-1604-xenial-v20180814",
         "zone": "europe-west1-d",
         "image_name": "control-ubuntu-1604-{{timestamp}}",
         "machine_type": "n1-standard-1",
@@ -107,7 +107,7 @@
     {
       "type": "file",
       "source": "files/.bashrc",
-      "destination": "/tmp"
+      "destination": "/tmp/"
     },
     {
 		"type": "shell",
