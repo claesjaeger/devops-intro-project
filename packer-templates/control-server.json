@@ -1,7 +1,7 @@
 {
   "variables": {
       "PACKER_OS_FLAVOUR": "ubuntu",
-      "PACKER_BOX_NAME": "ubuntu-14.04.5-server-amd64",
+      "PACKER_BOX_NAME": "ubuntu-16.04.5-server-amd64",
       "AWS_ACCESS_KEY_ID": "{{env `AWS_ACCESS_KEY_ID`}}",
       "AWS_SECRET_ACCESS_KEY": "{{env `AWS_SECRET_ACCESS_KEY`}}",
       "DIGITALOCEAN_API_TOKEN": "{{env `DIGITALOCEAN_API_TOKEN`}}"
@@ -39,9 +39,9 @@
         "guest_additions_path": "VBoxGuestAdditions_{{.Version}}.iso",
         "guest_os_type": "Ubuntu_64",
         "http_directory": "http",
-        "iso_checksum": "dde07d37647a1d2d9247e33f14e91acb10445a97578384896b4e1d985f754cc1",
+        "iso_checksum": "c94de1cc2e10160f325eb54638a5b5aa38f181d60ee33dae9578d96d932ee5f8",
         "iso_checksum_type": "sha256",
-        "iso_url": "http://releases.ubuntu.com/trusty/{{ user `PACKER_BOX_NAME` }}.iso",
+        "iso_url": "http://releases.ubuntu.com/xenial/{{ user `PACKER_BOX_NAME` }}.iso",
         "shutdown_command": "echo 'vagrant'|sudo -S shutdown -P now",
         "ssh_password": "vagrant",
         "ssh_port": 22,
@@ -69,16 +69,16 @@
         "type": "googlecompute",
         "account_file": "account.json",
         "project_id": "pristine-valve-212608",
-        "source_image": "ubuntu-1404-trusty-v20150316",
+        "source_image": "ubuntu-1604-xenial-v20180814 ",
         "zone": "europe-west1-d",
-        "image_name": "control-ubuntu-1404-{{timestamp}}",
+        "image_name": "control-ubuntu-1604-{{timestamp}}",
         "machine_type": "n1-standard-1",
         "ssh_username": "vagrant"
       },
       {
       "type": "digitalocean",
       "api_token": "{{ user `DIGITALOCEAN_API_TOKEN` }}",
-      "image": "ubuntu-14-04-x64",
+      "image": "ubuntu-16-04-x64",
       "region": "tor1",
       "size": "512mb",
       "droplet_name": "udacity-devops",
@@ -94,13 +94,25 @@
       ]
     },
     {
-    "type": "shell",
-    "only": ["virtualbox-iso"],
-    "execute_command": "echo 'vagrant'|sudo -S -E bash '{{.Path}}'",
-    "scripts": [
-    "scripts/virtualbox.sh",
-    "scripts/vagrant.sh"
-    ]
+		"type": "shell",
+		"only": ["virtualbox-iso"],
+		"execute_command": "echo 'vagrant'|sudo -S -E bash '{{.Path}}'",
+		"scripts": [
+			"scripts/virtualbox.sh",
+			"scripts/vagrant.sh"
+		]
+    },
+    {
+      "type": "file",
+      "source": "file/.bashrc",
+      "destination": "/tmp"
+    },
+    {
+		"type": "shell",
+		"execute_command": "echo 'vagrant'|sudo -S -E bash '{{.Path}}'",
+		"scripts": [
+			"scripts/fix_bash.sh"
+		]
     },
     {
       "type": "file",
@@ -117,6 +129,7 @@
         "scripts/cleanup.sh"
       ]
     }
+
   ],
   "post-processors": [
     [

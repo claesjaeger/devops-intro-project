@@ -86,3 +86,16 @@ Test with `ssh -T git@github.com`
 # Control
 
 ## Troubleshooting
+Nothing is running?! Check jenkins with `sudo service jenkins restart` if you get the following the easiest is to move from 14.04 to 16.04.
+```
+vagrant@vagrant:~$ sudo service jenkins restart
+Found an incorrect Java version
+Java version found:
+java version "1.7.0_181"
+OpenJDK Runtime Environment (IcedTea 2.6.14) (7u181-2.6.14-0ubuntu0.2)
+OpenJDK 64-Bit Server VM (build 24.181-b01, mixed mode)
+
+Aborting
+```
+
+Need to update 
