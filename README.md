@@ -1,6 +1,6 @@
 Instructions for Practice Project
 ========================================
-
+# Application
 These instructions assume familiarity with Git and GitHub. If you are not comfortable with those tools, please complete Udacity's [How to Use Git and GitHub](https://www.udacity.com/course/how-to-use-git-and-github--ud775) course before proceeding. 
 
 After installing the required tools, you will need to ensure that your computer can find the executables to run them. For this, you might need to modify the PATH environment variable. A good overview is at [superuser.com](https://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them). You may need to search the web for instructions on how to set the PATH variable for your specific operating system and version. 
@@ -47,7 +47,7 @@ Build 'virtualbox-iso' errored: ISO download failed.
 * To install app specific node packages, run `sudo npm install`. You may see several errors; they can be ignored for now.
 * Now you can run tests with the command `grunt -v`. The tests will run, then quit with an error. 
 
-### Troubleshooting
+## Troubleshooting
 
 If you encounter errors with Ubuntu version numbers not being available or checksum errors on Ubuntu,it means that this repository has not yet been updated for the latest Ubuntu version. Feel free to mention this in the [forum](https://discussions.udacity.com/c/nd012-p1-intro-to-devops/nd012-the-devops-environment). Meanwhile, you can fix this error for yourself by editing the contents of the `application-server.json` and `control-server.json` template files inside the `packer-templates` folder.
 
@@ -83,3 +83,6 @@ ssh-add .ssh/[id_rsa]
 
 Test with `ssh -T git@github.com`
 
+# Control
+
+## Troubleshooting
